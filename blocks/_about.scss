@@ -1,0 +1,78 @@
+.about{
+    &__image{
+        max-width: 475rem;
+        border-radius: 24rem;
+        position: relative;
+        margin-bottom: 37rem;
+    }
+
+    &__description{
+        margin-bottom: 40rem;
+    }
+
+    &__desc{
+        max-width: 509rem;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--desc-color);
+    }
+
+    &__container{
+        max-width: 1166rem;
+        padding-left: 35rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 89rem;
+        align-items: center;
+        margin-top: 96rem;
+        margin-bottom: 96rem;
+
+        @include tablet{
+            flex-direction: column;
+        }
+    }
+
+    &__btn{
+        border-radius: 4rem;
+        padding: 16rem 20rem;
+        max-width: 124rem;
+        background: var(--span-color);
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            transform: scale(1.1); 
+        }
+    }
+
+    &__btn-link{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--btn-link-color);
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            color: var(--title-color);
+        }
+    }
+}
+.about-me-img{
+    border-radius: inherit;
+    z-index: 2;
+    position: relative;
+}
+.image-backdrop{
+    position: absolute;
+    border: 16px solid var(--span-color);
+    border-radius: 24rem;
+    width: 100%;
+    height: calc(100% + 27rem);
+    flex-shrink: 0;
+    bottom: -37rem;
+    left: -35rem;
+}
+.above{
+    margin-bottom: 18px;
+}

@@ -1,0 +1,109 @@
+.contact{
+    padding-bottom: 96rem;
+    &__title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 96rem;
+        margin-bottom: 56rem;
+    }
+    &__main{
+        max-width: 685rem;
+    }
+
+    &__desc{
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--header-links);
+    }
+
+    &__info{
+        padding: 16rem 0 13rem 0;
+        max-width: 347rem;
+        font-weight: 400;
+        color: var(--title-color);
+    }
+
+    &__span{
+        font-weight: 700;
+        font-size: 16rem;
+        line-height: 256%;
+        color: var(--span-color);
+    }
+
+    &__paragraph{
+        margin-top: 16rem;
+    }
+
+    &__btn{
+        border-radius: 4rem;
+        padding: 16rem 20rem;
+        max-width: 123rem;
+        background: var(--span-color);
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            transform: scale(1.1); 
+        }
+
+    }
+
+    &__btn-link{
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--btn-link-color);
+        &:hover{
+            color: var(--title-color);
+        }
+    }
+
+    &__information{
+        display: flex;
+        justify-content: space-between;
+
+        @include mobile{
+            flex-direction: column;
+        }
+    }
+}
+
+.field{
+    display: block;
+    position: relative;
+    margin-bottom: 30rem;
+
+    &__input{
+        min-height: 63rem;
+        width: 100%;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 256%;
+        color: var(--span-color);
+        background: #1f2937;
+        padding: 11rem 18rem;
+        outline: none;
+        border: none;
+        resize: vertical;
+        overflow: hidden;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 16rem;
+            line-height: 256%;
+            color: var(--title-color);
+        }
+    }
+}
+.contact-form{
+    width: 48.6%;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+.message{
+    min-height: 166rem;
+    max-height: 300rem;
+}

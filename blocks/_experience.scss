@@ -1,0 +1,84 @@
+.experience{
+    padding-top: 85rem;
+    &__desc{
+        max-width: 730rem;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--header-links);
+        padding-bottom: 80rem;
+    }
+
+    &__main{
+        @include desktop-xs{
+            display: flex;
+            justify-content: center;
+        } 
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 85rem;
+
+        @include desktop-xs{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 30rem;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: auto;
+            gap: 30rem;
+        }
+    }
+}
+
+.preferences{
+    max-width: 366rem;
+    border-radius: 12rem;
+    padding: 32rem;
+    background: var(--backround-color);
+    max-height: 303rem;
+
+    &__date{
+        font-weight: 400;
+        font-size: 20rem;
+        line-height: 135%;
+        color: var(--date-color);
+        margin-bottom: 8rem;
+    }
+
+    &__main{
+        font-weight: 700;
+        font-size: 26rem;
+        line-height: 158%;
+        color: var(--span-color);
+        margin-bottom: 4rem;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--date-color);
+    }
+
+    &__desc{
+        padding: 8rem;
+        font-weight: 400;
+        font-size: 16rem;
+        line-height: 169%;
+        color: var(--desc-color);
+    }
+}
+.large{
+    max-width: 336rem;
+    max-height: 322rem;
+}
+.large-desc{
+    padding: 8rem 0 0 0 ;
+}
+.experience-title{
+    font-family: var(--second-family);
+}

@@ -1,0 +1,64 @@
+.header{
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        gap: 27rem;
+
+        @include desktop-xs{
+            z-index: 4;
+            position: fixed;
+            width: 70%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            flex-direction: column;
+            align-items: center;
+            padding: 289rem 0;
+            transition: .2s all ease-in-out;
+            transform: translateX(-120%);
+
+            #headerIcon:checked ~ & {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-about-me{
+    margin: 16rem 0;   
+    font-size: 24rem;
+}
+.header-link{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16rem;
+    text-transform: uppercase;
+    color: var(--header-links);
+    transition: 0.2s all ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+        color: var(--main-header-link);
+    }
+}
+
+.home{
+    color: var(--main-header-link);
+}
+
+.header-menu{
+    display: none;
+    @include desktop-xs{
+        display: flex;
+    }
+}
+#headerIcon{
+    display: none;
+}

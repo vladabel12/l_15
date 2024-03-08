@@ -1,0 +1,42 @@
+.ending{
+    display: flex;
+    justify-content: center;
+
+    &__title{
+        text-align: center;
+        margin-top: 56rem;
+    }
+
+    &__desc{
+        text-align: center;
+        max-width: 685rem;
+        margin-bottom: 56rem;
+    }
+
+    &__items{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 56rem;
+    }
+
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        gap: 16rem;
+        align-items: baseline;
+    }
+
+    &__img{
+        color: var(--items-color);
+        transition: .2s all ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            color: var(--span-color); 
+        }
+
+    }
+}
+.main-ending-link{
+    color: var(--span-color);
+}
